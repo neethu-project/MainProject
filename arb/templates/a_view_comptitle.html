@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="424" border="1">
+    <tr>
+      <td colspan="5"><div align="center">COMPLAINTS</div></td>
+    </tr>
+    <tr>
+      <td width="87">Customer Id </td>
+      <td width="113">Customer Name </td>
+      <td width="31">Date</td>
+      <td width="67">Complaint</td>
+    </tr>
+    {% for d in val %}
+    <tr>
+      <td>{{d[1]}}</td>
+      <td>{{d[4]}} {{d[5]}}</td>
+      <td>{{d[2]}}</td>
+      <td><a href="{{url_for('a_rplycomp',id=d[0])}}">{{d[3]}}</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="926" border="1">
+    <tr>
+      <td width="75">Account Id </td>
+      <td width="76">First Name </td>
+      <td width="69">Last Name </td>
+      <td width="33">DOB</td>
+      <td width="62">Age</td>
+      <td width="63">Gender</td>
+      <td width="82">Qualification</td>
+      <td width="67">Experience</td>
+      <td width="64">Company</td>
+      <td width="63">email</td>
+      <td width="63">Phone No </td>
+      <td width="63">Land Line </td>
+      <td width="63">Photo</td>
+      <td width="64">&nbsp;</td>
+    </tr>
+    {% for d in val %}
+    <tr>
+      <td>&nbsp;{{d[0]}}</td>
+      <td>&nbsp;{{d[1]}}</td>
+      <td>&nbsp;{{d[2]}}</td>
+      <td>&nbsp;{{d[3]}}</td>
+      <td>&nbsp;{{d[4]}}</td>
+      <td>&nbsp;{{d[5]}}</td>
+      <td>&nbsp;{{d[6]}} {{d[7]}}</td>
+      <td>&nbsp;{{d[8]}}</td>
+      <td>&nbsp;{{d[9]}}</td>
+      <td>&nbsp;{{d[10]}}</td>
+      <td>&nbsp;{{d[11]}}</td>
+      <td>&nbsp;{{d[12]}}</td>
+      <td><img src="../static/image/{{d[13]}}" alt="noimg" width="75" height="75"/></td>
+      <td><a href="{{url_for('a_approved_ext',id=d[0])}}">Approve</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>
