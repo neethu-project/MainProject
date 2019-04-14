@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="/ex_edit_design_action">
+  <table width="449" height="495" border="1">
+    <tr>
+      <td colspan="2" align="center"><input type="text" name="textfield2" value="{{d[5]}}"/></td>
+    </tr>
+    <tr>
+      <td height="190" colspan="2"><img name="" src="../static/uploaddesign/{{d[7]}}" width="442" height="180" alt="" /><a href="{{url_for('ex_view_upload_design_img',id=d[0])}}">Change Images </a></td>
+    </tr>
+    <tr>
+      <td width="188">Ploat Area </td>
+      <td width="245"><input type="text" name="textfield" value="{{d[2]}}"/></td>
+    </tr>
+    <tr>
+      <td>Meterial </td>
+      <td><textarea name="textarea" >{{d[3]}}</textarea></td>
+    </tr>
+    <tr>
+      <td>Other Details </td>
+      <td><textarea name="textarea2" >{{d[4]}}</textarea></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+          <div align="center">
+            <input type="submit" name="Submit" value="Upload" />
+          </div>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

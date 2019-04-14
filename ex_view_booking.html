@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="412" border="1">
+    <tr>
+      <td width="63">Book Id </td>
+      <td width="148">Customer</td>
+      <td width="102">Date</td>
+      <td width="71">Design</td>
+    </tr>
+    {% for d in val %}
+    <tr>
+      <td height="25">{{d[0]}}</td>
+      <td width="148">{{d[7]}} {{d[8]}}</td>
+      <td>{{d[5]}}</td>
+      <td><a href="{{url_for('ex_view_booking_more',id=d[3])}},{{url_for('ex_view_booking_more',id=d[4])}}">View_More</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+</html>

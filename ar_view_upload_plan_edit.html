@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="ar_edit_plan_action">
+  <table width="449" height="495" border="1">
+    <tr>
+      <td colspan="2" align="center"><input type="text" name="textfield8" value="{{d[10]}}"/></td>
+    </tr>
+    <tr>
+      <td height="190" colspan="2"><img name="" src="../static/uploadplan/{{d[12]}}" width="442" height="180" alt="" /><a href="{{url_for('ar_view_upload_plan_img',id=d[0])}}">Change Images </a></td>
+
+    </tr>
+    <tr>
+      <td width="188">Ploat Area </td>
+      <td width="245"><label>
+        <input type="text" name="textfield" value="{{d[2]}}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td>Square Feet </td>
+      <td><input type="text" name="textfield2" value="{{d[3]}}"/></td>
+    </tr>
+    <tr>
+      <td>No:of Rooms </td>
+      <td><input type="text" name="textfield3" value="{{d[4]}}"/></td>
+    </tr>
+    <tr>
+      <td>No:of Bed Rooms </td>
+      <td><input type="text" name="textfield4" value="{{d[5]}}"/></td>
+    </tr>
+    <tr>
+      <td>No:of Stories </td>
+      <td><input type="text" name="textfield5" value="{{d[6]}}"/></td>
+    </tr>
+    <tr>
+      <td>Car Parking </td>
+      <td><input type="text" name="textfield6" value="{{d[7]}}"/></td>
+    </tr>
+    <tr>
+      <td>Front Area </td>
+      <td><input type="text" name="textfield7" value="{{d[8]}}"/></td>
+    </tr>
+    <tr>
+      <td>Other Details </td>
+      <td><label>
+        <textarea name="textarea" >{{d[9]}}</textarea>
+      </label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><label>
+          <div align="center">
+            <input type="submit" name="Submit" value="Edit" />
+          </div>
+        </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
